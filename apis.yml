@@ -1,7 +1,25 @@
 aid: fintool
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fintool.png
 name: Fintool
-description: Fintool is a company surfaced as a portfolio company of menlo-ventures and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fintool is an AI-powered equity research analyst and financial copilot built for institutional
+  investors such as hedge funds, asset managers, and buy-side and sell-side analysts. Its assistant
+  ingests SEC filings (10-K, 10-Q, 8-K), earnings-call transcripts, and financial data to answer
+  research questions with source citations, accelerating fundamental analysis and due diligence.
+  Fintool is a portfolio company of Menlo Ventures. This profile was added to the API Evangelist
+  network from VC-portfolio discovery; Fintool operates as an enterprise SaaS product and, as of this
+  enrichment pass, publishes no public developer API, SDK, or developer portal that could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/fintool/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Financial Services
+- Artificial Intelligence
+- Equity Research
+- Investment Research
+- SEC Filings
+- Fintech
+- Large Language Models
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fintool-domain-security.yml
 - type: Website
-  url: https://fintool.com
+  url: https://fintool.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
